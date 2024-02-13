@@ -1,0 +1,30 @@
+# Ignore pycache
+__pycache__/
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and temporary files
+*.log
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Ignore package build directories
+dist/
+build/
+
+
+# Ignore db files
+*.db
