@@ -3,7 +3,7 @@ import pandas as pd
 from database import (
     connect_to_database,
     add_entity,
-    get_entities_df_with_selection,
+    get_entities_df,
     get_entity,
     update_entity,
     delete_entity,
@@ -75,7 +75,7 @@ if uploaded_file is not None:
 
 # Displaying entities in a DataTable
 st.write("Existing Entities:")
-entities_df = get_entities_df_with_selection()
+entities_df = get_entities_df()
 if not entities_df.empty:
     edited_df = st.data_editor(
         entities_df,
