@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from database import (
-    connect_to_database,
+    create_database,
     add_entity,
     get_entities_df,
     get_entity,
@@ -10,6 +10,7 @@ from database import (
     bulk_insert_entities,
 )
 
+create_database()
 st.title("Admin Panel")
 
 with st.form("add_entity"):
